@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+/* navagation bar */
+#navbar {
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 100%;
+    height: 7rem;
+}
+
+#navagationbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 5.5rem;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#logoimg {
+    display: flex;
+    position: relative;
+}
+
+#navbar .items {
+    display: flex;
+    position: relative;
+
+}
+
+/* navagation bar logo and image */
+
+#logoimg {
+    margin: 12px 32px;
+    cursor: pointer;
+}
+
+#logoimg a {
+    margin-top: 0.5rem;
+}
+
+#logoimg a img {
+    display: block;
+    width: 5.2rem;
+    border-radius: 4rem;
+}
+
+/* navagation bar list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0.5rem;
+    padding: 9px 10px;
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar ul li a {
+    font-size: 2.5rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 3px 24px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.8rem;
+}
+
+/* Heading and paragraph styling in CSS */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 21rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url(/Project2/img/bgimg.jpg);
+    width: 100%;
+    height: 32.5rem;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.h-primary {
+    /* color: black; */
+    text-align: center;
+    font-size: 3.7rem;
+    margin: 24px;
+}
+
+#home p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    width: 15rem;
+    padding: 12px;
+    margin: 32px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-style: none;
+}
+
+#home .btn:hover {
+    background-color: antiquewhite;
+    color: rgb(33, 32, 32);
+    box-shadow: -2px 4px antiquewhite;
+}
+
+/* Services Section  */
+
+#services-container h1 {
+    padding: 2rem;
+    margin-top: 11px;
+}
+
+#services {
+    display: flex;
+    padding: 0.5rem;
+    margin: -2rem 7rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#services .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(36, 164, 16);
+    border-radius: 1.5rem;
+    height: 26rem;
+    width: 30rem;
+    margin: 0.5rem 1rem;
+}
+
+#services .box img {
+    border-radius: 1rem;
+    height: 12.1rem;
+    padding-top: 0.5rem;
+}
+
+.h-secondary {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 12px;
+}
+
+.textcenter {
+    text-align: center;
+    text-shadow: 1rem 1rem 5rem;
+}
+
+
+/* #services-container{
+    padding: 1rem 1rem;
+
+} */
+
+/* Our afliation or clients are */
+
+#ourclient {
+    margin: 5rem 0rem;
+}
+
+#ourclient::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url(/Project2/img/2bgimg.jpg);
+    height: 25.8rem;
+    width: 100%;
+}
+
+#ourclient h2 {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.6rem 14rem;
+}
+
+.clientitem img {
+    width: 5.5rem;
+}
+
+.clientitem a {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* Contat form designing */
+
+#contact h1 {
+    padding: 1.5rem;
+    margin-bottom: -2rem;
+    font-size: 3rem;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url(/Project2/img/contactimg.jpg);
+    height: 30rem;
+    width: 100%;
+
+}
+
+#contactbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#contactbox input[type],
+textarea {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+}
+
+.contactitem textarea {
+    display: flex;
+    flex-direction: column;
+    height: 5.5rem;
+}
+
+.contactitem {
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+}
+
+/* footer */
+.footetcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 45, 45);
+    /* padding: 0.5rem; */
+    height: 3.2rem;
+
+}
+
+.footetcontent p {
+    color: white;
+}
